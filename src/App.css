@@ -18,10 +18,21 @@ body{
 
 .grid{
   display: grid;
-  margin-left: .5px;
-  grid-template-columns: repeat(4,1fr);
+  margin-left: 5%;
+  grid-template-columns: repeat(2,1fr);
   grid-gap: 0.2em;
   justify-content: center;
+  width: 90%;
+
+}
+
+.card-img-top{
+  width: 50%;
+  height: 10%;
+}
+.grid-item {
+  width: 90%;
+  height: 50%;
 }
 
 h2{

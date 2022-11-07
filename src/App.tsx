@@ -18,7 +18,7 @@ function App() {
             .then((res)=>res.json())
             .then(data=>{
                 console.log(data);
-                data.results.splice(12);
+                data.results.splice(10);
                 setMovies(data.results);
             })
     }, [])
@@ -121,9 +121,11 @@ function App() {
             <div>
                 {movies.length > 0 ?(
                     <div className="container">
-                        <div className="grid">
-                            {movies.map((movieReq)=>
-                                <MovieBox key={movieReq.id} {...movieReq}/>)}
+                        <div className="grid" >
+                                {movies.map((movieReq)=>
+                                    <div className="grid-item">
+                                        <MovieBox key={movieReq.id} {...movieReq}  />
+                                    </div>)}
                         </div>
                     </div>
                 ):(
