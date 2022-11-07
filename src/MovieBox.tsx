@@ -17,9 +17,7 @@ const MovieBox =({titel, poster_path, vote_average, release_date, overview})=>{
         <img className="card-img-top" src={API_IMG+poster_path} />
             <div className="card-body" >
                 <h6>Titel: {titel}</h6>
-                <h6>Release Date: {release_date}</h6>
-                <h6>Overview</h6>
-                <p className="overview">{overview}</p>
+                <h6>Date: {release_date}</h6>
                 <button type="button" className="btn btn-dark" onClick={handleShow} >View More</button>
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
